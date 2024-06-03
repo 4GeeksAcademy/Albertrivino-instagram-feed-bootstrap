@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Instagram Feed with Bootstrap </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/f427ef6a47.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://freelogopng.com/images/all_img/1658587597instagram-png-image.png" alt="Logo"
+                    width="110%" height="34" class="d-inline-block align-text-top">
+            </a>
+
+            <div class="ml-auto d-flex gap-2">
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Create a new post
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <strong>Caption:</strong>
+                                <div class="mb-3">
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                        placeholder="Add the caption of your post here"
+                                        aria-label="default input example"></textarea>
+
+                                    <button type="button" class="btn btn-outline-secondary mt-2"><i
+                                            class="fa-solid fa-camera"></i></button>
+                                    <button type="button" class="btn btn-outline-secondary mt-2"><i
+                                            class="fa-solid fa-location-dot"></i></button>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-success">Publish</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dropdown -->
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle me-2" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                        <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Botones vistas -->
+
+    <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i
+                    class="fa-solid fa-table-cells"></i></button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i
+                    class="fa-solid fa-square"></i></button>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+            tabindex="0">
+
+            <!-- Primera ventana -->
+            <div class="row gy-1 gx-1 mw-100 p-3">
+                <div class="col-sm-12 col-md-6 col-xl-4 ">
+                    <div class="image-container">
+                        <img src="https://images.pexels.com/photos/18879100/pexels-photo-18879100/free-photo-of-hombre-festival-disfraz-traje.jpeg"
+                            class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-xl-4 ">
+                    <div class="image-container">
+                        <img src="https://images.pexels.com/photos/3281127/pexels-photo-3281127.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-xl-4 ">
+                    <div class="image-container">
+                        <img src="https://img.freepik.com/foto-gratis/vista-frontal-personaje-espeluznante-calavera_23-2150701258.jpg?size=626&ext=jpg&ga=GA1.1.673518334.1717412587&semt=sph"
+                            class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-xl-4 ">
+                    <div class="image-container">
+                        <img src="https://images.pexels.com/photos/2848647/pexels-photo-2848647.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            class="img-fluid">
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-md-6 col-xl-4 ">
+                    <div class="image-container">
+                        <img src="https://images.pexels.com/photos/18948251/pexels-photo-18948251/free-photo-of-mujer-flores-halloween-horror.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-xl-4 ">
+                    <div class="image-container">
+                        <img src="https://images.pexels.com/photos/5546480/pexels-photo-5546480.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-xl-4 ">
+                    <div class="image-container">
+                        <img src="https://img.freepik.com/foto-gratis/manos-miedo-mujer-zombie-sosteniendo-corazon_23-2149105944.jpg?t=st=1717418524~exp=1717422124~hmac=ec8ccef81efdec887a2415703c19644887ba8bec5c86b7649c15cfae38743650&w=1380"
+                            class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-xl-4 ">
+                    <div class="image-container">
+                        <img src="https://img.freepik.com/foto-gratis/primer-plano-zombie-bano_23-2150838686.jpg?t=st=1717418196~exp=1717421796~hmac=5202891a8204419cb878c8a128b542da17f99884c8b96a7ed589e82a74ccf388&w=740"
+                            class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-xl-4 ">
+                    <div class="image-container">
+                        <img src="https://img.freepik.com/foto-gratis/personaje-espeluznante-tiro-completo-posando_23-2150701312.jpg?t=st=1717418177~exp=1717421777~hmac=49bd9b8a73c3ee5cebb3c5b2bdc50665584f3cc792bc24c7e9253a8796f6075d&w=740"
+                            class="img-fluid">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+
+
+            <!-- segunda ventana -->
+            <div class="row justify-content-center mb-3">
+                <div class="col-sm-6 md-4 xl-2">
+                    <div class="card">
+
+                        <div class="d-inline-flex m-2 justify-content-between">
+                            <h5 class="card-title">A dark forest</h5>
+                            <h6>25/24</h6>
+                        </div>
+                        <img src="https://images.pexels.com/photos/18879100/pexels-photo-18879100/free-photo-of-hombre-festival-disfraz-traje.jpeg"
+                            class="card-img-top " alt="imagen payaso">
+                        <div class="card-body">
+                            <p class="card-tex"><strong>305 Likes</strong></p>
+                            <p class="card-text">The Clown is a dramatic comedy that tells the story of Benjamín (Selton
+                                Mello, Reis e Ratos) and Waldemar (Paulo José, Meu País), two clowns who form a funny
+                                couple of considerable notoriety in the Circo Esperanza in Brazil.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row justify-content-center mb-3">
+                <div class="col-sm-6 md-4 xl-2">
+                    <div class="card">
+
+                        <div class="d-inline-flex m-2 justify-content-between">
+                            <h5 class="card-title">the little snake</h5>
+                            <h6>29/24</h6>
+                        </div>
+                        <img src="https://images.pexels.com/photos/3281127/pexels-photo-3281127.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            class="card-img-top" alt="imagen Serpiente">
+                        <div class="card-body">
+                            <p class="card-tex"><strong>832 Likes</strong></p>
+                            <p class="card-text">A huge snake developed by the militia escapes from its confinement and
+                                murders people in a town.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mb-3">
+                <div class="col-sm-6 md-4 xl-2">
+                    <div class="card">
+
+                        <div class="d-inline-flex m-2 justify-content-between">
+                            <h5 class="card-title">Immortan Joe</h5>
+                            <h6>25/12</h6>
+                        </div>
+                        <img src="https://img.freepik.com/foto-gratis/vista-frontal-personaje-espeluznante-calavera_23-2150701258.jpg?size=626&ext=jpg&ga=GA1.1.673518334.1717412587&semt=sph"
+                            class="card-img-top" alt="imagen Mad max">
+                        <div class="card-body">
+                            <p class="card-tex"><strong>905 Likes</strong></p>
+                            <p class="card-text">
+                                Immortan Joe is a fictional character and the main antagonist of the 2015 film Mad Max:
+                                Fury Road. He is played by Hugh Keays-Byrne, who three decades earlier played Toecutter
+                                in the original Mad Max</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-3">
+                <div class="col-sm-6 md-4 xl-2">
+                    <div class="card">
+
+                        <div class="d-inline-flex m-2 justify-content-between">
+                            <h5 class="card-title">Acherontia atropos</h5>
+                            <h6>25/24</h6>
+                        </div>
+                        <img src="https://images.pexels.com/photos/2848647/pexels-photo-2848647.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            class="card-img-top" alt="imagen africa">
+                        <div class="card-body">
+                            <p class="card-tex"><strong>895 Likes</strong></p>
+                            <p class="card-text">La esfinge de la muerte africana o esfinge de la calavera africana
+                                (Acherontia atropos) es una especie de lepidóptero ditrisio de la familia Sphingidae.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mb-3">
+                <div class="col-sm-6 md-4 xl-2">
+                    <div class="card">
+
+                        <div class="d-inline-flex m-2 justify-content-between">
+                            <h5 class="card-title">Dia de los Muertos</h5>
+                            <h6>06/24</h6>
+                        </div>
+                        <img src="https://images.pexels.com/photos/18948251/pexels-photo-18948251/free-photo-of-mujer-flores-halloween-horror.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            class="card-img-top" alt="imagen de la muerte">
+                        <p class="card-tex"><strong>1505 Likes</strong></p>
+                        <p class="card-text">El Día de Muertos es una tradición celebrada el 1 y 2 de noviembre en la
+                            que se honra la memoria de los muertos. Se originó como un sincretismo entre las
+                            celebraciones católicas así como las diversas costumbres de los indígenas de México,
+                            Centroamérica y de Sudamérica.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mb-3">
+                <div class="col-sm-6 md-4 xl-2">
+                    <div class="card">
+
+                        <div class="d-inline-flex m-2 justify-content-between">
+                            <h5 class="card-title">Vampire</h5>
+                            <h6>13/24</h6>
+                        </div>
+                        <img src="https://images.pexels.com/photos/5546480/pexels-photo-5546480.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            class="card-img-top" alt="imagen Vampire">
+                        <div class="card-body">
+                            <p class="card-tex"><strong>663 Likes</strong></p>
+                            <p class="card-text">A vampire is, according to the folklore of several countries, a
+                                creature that feeds on the vital essence of other living beings (usually in the form of
+                                blood) in order to remain active.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-3">
+                <div class="col-sm-6 md-4 xl-2">
+                    <div class="card">
+
+                        <div class="d-inline-flex m-2 justify-content-between">
+                            <h5 class="card-title">Pig Heart</h5>
+                            <h6>01/24</h6>
+                        </div>
+                        <img src="https://img.freepik.com/foto-gratis/manos-miedo-mujer-zombie-sosteniendo-corazon_23-2149105944.jpg?t=st=1717418524~exp=1717422124~hmac=ec8ccef81efdec887a2415703c19644887ba8bec5c86b7649c15cfae38743650&w=1380"
+                            class="card-img-top" alt="imagen corazon">
+                        <div class="card-body">
+                            <p class="card-tex"><strong>2565 Likes</strong></p>
+                            <p class="card-text">David Bennett, the first human being to live for two months with a
+                                genetically altered pig heart in his chest, died in March last year. This Tuesday,
+                                Lawrence Faucette, 58, died after receiving a transplant with similar characteristics on
+                                September 20.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-3">
+                <div class="col-sm-6 md-4 xl-2">
+                    <div class="card">
+
+                        <div class="d-inline-flex m-2 justify-content-between">
+                            <h5 class="card-title">The Cranberries</h5>
+                            <h6>25/24</h6>
+                        </div>
+                        <img src="https://img.freepik.com/foto-gratis/primer-plano-zombie-bano_23-2150838686.jpg?t=st=1717418196~exp=1717421796~hmac=5202891a8204419cb878c8a128b542da17f99884c8b96a7ed589e82a74ccf388&w=740"
+                            class="card-img-top" alt="Imagen zombie">
+                        <div class="card-body">
+                            <p class="card-tex"><strong>305 Likes</strong></p>
+                            <p class="card-text">In your head, in your head
+                                Zombie, zombie, zombie-ie-ie
+                                What's in your head, in your head
+                                Zombie, zombie, zombie-ie-ie-ie.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mb-3">
+                <div class="col-sm-6 md-4 xl-2">
+                    <div class="card">
+
+                        <div class="d-inline-flex m-2 justify-content-between">
+                            <h5 class="card-title">Dark Souls</h5>
+                            <h6>30/24</h6>
+                        </div>
+                        <img src="https://img.freepik.com/foto-gratis/personaje-espeluznante-tiro-completo-posando_23-2150701312.jpg?t=st=1717418177~exp=1717421777~hmac=49bd9b8a73c3ee5cebb3c5b2bdc50665584f3cc792bc24c7e9253a8796f6075d&w=740"
+                            class="card-img-top" alt="Imagen Dark Souls">
+                        <div class="card-body">
+                            <p class="card-tex"><strong>5505 Likes</strong></p>
+                            <p class="card-text">Dark Souls es una serie de juegos de rol de acción creada por Hidetaka
+                                Miyazaki de FromSoftware y publicada por Bandai Namco Entertainment. La serie comenzó
+                                con el lanzamiento de Dark Souls en 2011 y ha visto dos secuelas, Dark Souls II en 2014
+                                y Dark Souls III en 2016.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
